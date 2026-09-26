@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#4d20a7" />
   <meta name="description" content="Buffet Locomotiva — conheça nosso espaço e fale conosco para sua próxima festa." />
-  <title>Buffet Locomotiva | Momentos que viram memórias</title>
+  <title>Buffet Locomotiva | Celebramos vidas, marcamos gerações</title>
   <style>
     :root{
       --purple:#4d20a7;
@@ -44,8 +44,7 @@
       display:flex;align-items:center;justify-content:space-between;
     }
     .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.04em}
-    .brand img{width:54px;height:54px;object-fit:cover;border-radius:50%;border:2px solid var(--gold);box-shadow:0 0 24px rgba(245,220,75,.18)}
-    .nav-cta{padding:11px 17px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.08);backdrop-filter:blur(10px);font-size:.9rem}
+        .nav-cta{padding:11px 17px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.08);backdrop-filter:blur(10px);font-size:.9rem}
     .hero-grid{
       position:relative;z-index:2;max-width:1180px;margin:auto;padding:50px 28px 90px;
       display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:28px;
@@ -68,47 +67,12 @@
     .trust span{display:inline-flex;align-items:center;gap:7px}
     .dot{width:7px;height:7px;background:var(--gold);border-radius:50%;box-shadow:0 0 10px var(--gold)}
 
-    /* Locomotive illustration */
-    .scene{position:relative;min-height:480px;display:grid;place-items:center;perspective:1100px}
-    .glow{position:absolute;width:410px;height:410px;border-radius:50%;background:radial-gradient(circle,rgba(245,220,75,.20),rgba(111,54,216,.06) 48%,transparent 70%);filter:blur(4px)}
-    .train-wrap{position:relative;width:min(500px,92%);height:390px;transform:rotateX(7deg) rotateY(-10deg);transform-style:preserve-3d;filter:drop-shadow(0 28px 25px rgba(0,0,0,.35))}
-    .smoke{position:absolute;top:-40px;left:47%;width:170px;height:140px;transform:translateX(-50%);filter:blur(.2px)}
-    .puff{position:absolute;border-radius:50%;background:rgba(255,255,255,.72);box-shadow:inset -10px -8px 20px rgba(105,83,135,.12);animation:float 4.5s infinite ease-in-out}
-    .p1{width:56px;height:56px;left:55px;bottom:16px}.p2{width:72px;height:72px;left:5px;bottom:52px;animation-delay:.6s}.p3{width:48px;height:48px;left:94px;bottom:88px;animation-delay:1.2s}.p4{width:38px;height:38px;left:127px;bottom:122px;animation-delay:1.8s}
-    @keyframes float{0%,100%{transform:translateY(0) scale(1);opacity:.5}50%{transform:translateY(-15px) scale(1.06);opacity:.85}}
-    .cab{
-      position:absolute;right:36px;top:82px;width:132px;height:170px;border-radius:14px 14px 7px 7px;
-      background:linear-gradient(145deg,#7d45dc,#4c1fa3);border:3px solid var(--gold);box-shadow:inset 10px 0 0 rgba(255,255,255,.08),12px 14px 0 #351372;
-      transform:translateZ(28px)
-    }
-    .cab:before{content:"";position:absolute;left:17px;right:17px;top:20px;height:63px;border:4px solid var(--gold);border-radius:9px;background:linear-gradient(145deg,#27124d,#5b2ab4);box-shadow:inset 0 0 22px rgba(0,0,0,.3)}
-    .roof{position:absolute;left:-12px;top:-18px;width:156px;height:24px;border:3px solid var(--gold);border-radius:10px;background:#5b2ab4}
-    .boiler{
-      position:absolute;left:64px;top:145px;width:290px;height:115px;border-radius:70px 70px 28px 28px;
-      background:linear-gradient(160deg,#7d45dc 0%,#5422ad 52%,#32116e 100%);border:4px solid var(--gold);box-shadow:inset 0 10px 18px rgba(255,255,255,.11),0 13px 0 #351372;transform:translateZ(35px)
-    }
-    .boiler-ring{position:absolute;left:-22px;top:16px;width:80px;height:80px;border:6px solid var(--gold);border-radius:50%;background:#3b167e;box-shadow:inset 0 0 0 5px #5727ad}
-    .boiler-ring:after{content:"";position:absolute;inset:15px;border:2px solid rgba(245,220,75,.6);border-radius:50%}
-    .front{
-      position:absolute;left:15px;top:157px;width:65px;height:92px;border-radius:14px 14px 25px 25px;background:#4b1fa1;border:4px solid var(--gold);transform:translateZ(65px);
-    }
-    .front:before{content:"";position:absolute;left:10px;right:10px;top:10px;height:43px;border-radius:50%;border:4px solid var(--gold);background:#2c145d}
-    .chimney{
-      position:absolute;left:88px;top:79px;width:62px;height:82px;background:linear-gradient(90deg,#48209a,#7c43da);border:4px solid var(--gold);border-radius:9px 9px 18px 18px;transform:translateZ(50px)
-    }
-    .chimney:before{content:"";position:absolute;left:-10px;top:-12px;width:82px;height:22px;border:4px solid var(--gold);border-radius:50%;background:#5d2bb9}
-    .chimney:after{content:"";position:absolute;left:12px;right:12px;top:29px;height:4px;background:var(--gold);box-shadow:0 13px 0 var(--gold)}
-    .cowcatcher{
-      position:absolute;left:0;bottom:54px;width:138px;height:78px;transform:translateZ(78px) skewX(-12deg);
-      border-bottom:10px solid var(--gold);
-    }
-    .cowcatcher:before,.cowcatcher:after{content:"";position:absolute;bottom:0;width:8px;height:70px;background:var(--gold)}
-    .cowcatcher:before{left:20px;transform:rotate(-25deg)}.cowcatcher:after{right:18px;transform:rotate(25deg)}
-    .wheel{position:absolute;bottom:23px;width:70px;height:70px;border-radius:50%;border:8px solid var(--gold);background:#35136f;box-shadow:inset 0 0 0 9px #5b2ab4,0 10px 0 #27104e}
-    .w1{left:58px}.w2{left:170px}.w3{left:282px}.wheel i{position:absolute;inset:22px;border-radius:50%;background:var(--gold)}
-    .track{position:absolute;left:4%;right:2%;bottom:0;height:20px;border-top:7px solid var(--gold);border-bottom:7px solid var(--gold);transform:rotate(-2deg) translateZ(5px)}
-    .sleepers{position:absolute;left:4%;right:2%;bottom:-17px;height:42px;background:repeating-linear-gradient(90deg,transparent 0 28px,#e6cb44 28px 38px);opacity:.85;transform:rotate(-2deg)}
-
+    /* Logo principal */
+    .scene{position:relative;min-height:480px;display:grid;place-items:center}
+    .glow{position:absolute;width:430px;height:430px;border-radius:50%;background:radial-gradient(circle,rgba(245,220,75,.20),rgba(111,54,216,.06) 48%,transparent 70%);filter:blur(4px)}
+    .hero-logo{position:relative;z-index:1;width:min(390px,82%);height:auto;display:block;filter:drop-shadow(0 28px 25px rgba(0,0,0,.35));transition:transform .35s ease}
+    .hero-logo:hover{transform:scale(1.025)}
+    
     .strip{background:var(--gold);color:#2d145b;padding:12px 18px;font-weight:900;text-align:center;letter-spacing:.03em}
     .section{max-width:1100px;margin:auto;padding:88px 24px}
     .section-head{max-width:700px;margin-bottom:35px}
@@ -132,14 +96,13 @@
     .mini-logo{width:46px;height:46px;border-radius:50%;border:2px solid #e0c93f;vertical-align:middle;margin-right:8px}
     @media(max-width:850px){
       .hero-grid,.contact-inner{grid-template-columns:1fr}
-      .hero{min-height:auto}.scene{min-height:390px;order:-1}.train-wrap{transform:scale(.82) rotateX(7deg) rotateY(-10deg)}
-      .hero-grid{padding-top:20px}.cards{grid-template-columns:1fr}
+      .hero{min-height:auto}.scene{min-height:390px;order:-1}      .hero-grid{padding-top:20px}.cards{grid-template-columns:1fr}
       .nav-cta{display:none}
     }
     @media(max-width:520px){
-      nav{padding:16px}.brand span{display:none}
-      .hero-grid{padding:30px 18px 65px}h1{font-size:3.15rem}.hero-copy{font-size:1rem}
-      .actions .btn{width:100%}.scene{min-height:310px}.train-wrap{transform:scale(.62) rotateX(7deg) rotateY(-10deg)}
+      nav{padding:16px}
+      .hero-grid{padding:30px 18px 65px}h1{font-size:3.15rem}.hero-copy{font-size:1rem}.hero-logo{width:min(300px,78%)}
+      .actions .btn{width:100%}.scene{min-height:310px}
       .section{padding:65px 18px}.contact{margin:0 14px 50px}.contact-inner{padding:40px 22px}
     }
   </style>
@@ -149,7 +112,6 @@
     <section class="hero" id="inicio">
       <nav>
         <a class="brand" href="#inicio" aria-label="Buffet Locomotiva">
-          <img src="logo.png" alt="Logo do Buffet Locomotiva">
           <span>BUFFET LOCOMOTIVA</span>
         </a>
         <a class="nav-cta" href="#contato">Fale com a gente →</a>
@@ -158,7 +120,7 @@
       <div class="hero-grid">
         <div>
           <div class="eyebrow">🚂 Buffet Locomotiva</div>
-          <h1>Momentos que viram memórias.</h1>
+          <h1>Celebramos vidas, marcamos gerações.</h1>
           <p class="hero-copy">
             Um espaço pensado para transformar sua comemoração em uma experiência especial.
             Conheça o Buffet Locomotiva e fale com nossa equipe.
@@ -173,22 +135,9 @@
           </div>
         </div>
 
-        <div class="scene" aria-label="Ilustração de uma locomotiva estilizada">
+        <div class="scene" aria-label="Logo do Buffet Locomotiva">
           <div class="glow"></div>
-          <div class="train-wrap">
-            <div class="smoke">
-              <div class="puff p1"></div><div class="puff p2"></div><div class="puff p3"></div><div class="puff p4"></div>
-            </div>
-            <div class="cab"><div class="roof"></div></div>
-            <div class="boiler"><div class="boiler-ring"></div></div>
-            <div class="front"></div>
-            <div class="chimney"></div>
-            <div class="cowcatcher"></div>
-            <div class="wheel w1"><i></i></div>
-            <div class="wheel w2"><i></i></div>
-            <div class="wheel w3"><i></i></div>
-            <div class="track"></div><div class="sleepers"></div>
-          </div>
+          <img class="hero-logo" src="locomotiva-hero.webp" alt="Logo do Buffet Locomotiva">
         </div>
       </div>
     </section>
